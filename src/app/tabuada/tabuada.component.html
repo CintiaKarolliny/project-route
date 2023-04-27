@@ -1,0 +1,13 @@
+<input type="number" [(ngModel)]="n" />
+
+<table border="1">
+  <tr>
+    <th>Numero</th>
+    <th>sla</th>
+  </tr>
+
+  <tr *ngFor="let n of tabuar(); index as i">
+    <td>{{ n }}</td>
+    <td> {{ i+1 }}
+  </tr>
+</table>
